@@ -11,7 +11,12 @@ public class GraduateStudent extends Student {
         super(name);
 //        this.name = name;
     }
+    @Override
     public void print() {
         System.out.println(name + "\t"+english+"\t" +math + "\t" +getAverage() + "\t" + thesis);
+    }
+
+    public void test() {
+
     }
 }

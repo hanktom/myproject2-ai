@@ -9,7 +9,7 @@ public class Student {
     }
     public Student(String name, int english, int math) { //Constructor
         this(name);
-//        this.name = name;
+//        this.namex = name;
         this.english = english;
         this.math = math;
     }
