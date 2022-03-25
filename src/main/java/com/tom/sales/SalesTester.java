@@ -1,4 +1,4 @@
-package com.tom;
+package com.tom.sales;
 
 public class SalesTester {
     public static void main(String[] args) {
