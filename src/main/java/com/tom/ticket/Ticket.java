@@ -7,9 +7,9 @@ package com.tom.ticket;
  */
 
 public class Ticket {
-    public static final int TAIPEI_CITY = 100;
+    /*public static final int TAIPEI_CITY = 100;
     public static int TAICHUNG_CITY = 200;
-    public static int KAOHSIUNG_CITY = 300;
+    public static int KAOHSIUNG_CITY = 400;*/
 
     int price;
     Station start;
@@ -17,7 +17,21 @@ public class Ticket {
     public Ticket(Station start, Station destination) {
         this.start = start;
         this.destination = destination;
-        if (start == Station.TAIPEI_CITY) {
+        int diff = Math.abs(start.id - destination.id);
+//        System.out.println(diff);
+        switch (diff) {
+            case 100:
+                price = 500;
+                break;
+            case 200:
+                price = 600;
+                break;
+            case 300:
+                price = 1100;
+                break;
+        }
+
+        /*if (start == Station.TAIPEI_CITY) {
             if (destination ==  Station.TAICHUNG) {
                 price = 500;
             } else {
@@ -35,7 +49,7 @@ public class Ticket {
             } else {
                 price = 600;
             }
-        }
+        }*/
     }
 
     public void print() {
