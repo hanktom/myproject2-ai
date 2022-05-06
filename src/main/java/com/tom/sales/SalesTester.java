@@ -16,12 +16,11 @@ public class SalesTester {
         customers.add(new Customer("006", 500));
         customers.add(new GoldenCustomer("007", 900));
         for (int i = 0; i < 5; i++) {
-            customers.get(i).print();
+            //customers.get(i).print();
         }
         for (Customer c : customers) {
             c.print();
         }
-
         //0001  1200    1100
     }
 }
