@@ -6,8 +6,8 @@ import java.util.Date;
 public class Runner {
     public static void main(String[] args) {
         String id = "ABC-1234";
-        String enterTime = "08:27";
-        String exitTime = "13:05";
+        String enterTime = "08:30";
+        String exitTime = "08:59";
         SimpleDateFormat sdf =
                 new SimpleDateFormat("HH:mm");
         //Exception 例外 vs Error 錯誤
@@ -20,7 +20,6 @@ public class Runner {
         }
         System.out.println(d);
         System.out.println(d.getTime());
-        //
 //        long a = 3*60*60*1000;
         try {
             Date d2 = sdf.parse(exitTime);
@@ -29,6 +28,12 @@ public class Runner {
             long ms = d2.getTime() - d.getTime();
             int minutes = (int)(ms/(1000*60));
             System.out.println(minutes);
+            // NT$30/h
+            int hours = (minutes+30)/60;
+            System.out.println(30*hours);
+            //不滿15分鐘不算錢
+            //15-29分鐘，為半小時，收15元
+            //30-44分，為半小時，收15元
         } catch (Exception e) {
             System.out.println("Exit wrong format");
         }
