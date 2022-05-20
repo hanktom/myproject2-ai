@@ -9,5 +9,6 @@ public class Scoring {
         jack.print();
         hank.print();
         jane.print();
+//        jack.
     }
 }

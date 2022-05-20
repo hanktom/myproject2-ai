@@ -22,5 +22,6 @@ public class SalesTester {
             c.print();
         }
         //0001  1200    1100
+        MyClass t = new MyClass();
     }
 }

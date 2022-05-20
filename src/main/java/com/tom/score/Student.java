@@ -1,9 +1,12 @@
 package com.tom.score;
 
+import com.tom.score.Printable;
+
+//修飾字 Modifier: public/沒有寫(package)/protected(子)/private
 public class Student implements Printable {
-    String name;
-    int english;
-    int math;
+    public String name;
+    protected int english;
+    protected int math;
     public Student(String name) { //Constructor
         this.name = name;
     }
