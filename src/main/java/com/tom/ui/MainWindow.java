@@ -11,6 +11,7 @@ public class MainWindow {
         //swing, JavaFX
         //eXtension
         JFrame frame = new JFrame();
+        //Demo
         frame.setSize(400, 300);
         frame.setLocation(200, 200);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -22,6 +23,7 @@ public class MainWindow {
                 System.out.println("Hello~~");
             }
         });
+        System.out.println("Hello");
 //        MyActionListener listener = new MyActionListener();
 //        button.addActionListener(listener);
         frame.setLayout(new FlowLayout());

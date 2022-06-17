@@ -15,6 +15,7 @@ public class Student implements Printable {
 //        this.namex = name;
         this.english = english;
         this.math = math;
+        System.out.println("Test");
     }
     public Student() { //Default constructor
 
