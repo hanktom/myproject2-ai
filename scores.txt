@@ -1,2 +1,5 @@
 Jack,25,80
 Hank,67,96
+Eric,60,90
+Ella,88,66
+Frank,33,99
